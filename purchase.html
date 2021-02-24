@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Black Forest Gateau | Buy</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
 
@@ -24,6 +27,81 @@
             </ul>
         </div>
      </nav>
-    
+
+     <main>
+        <h1 class="text-primary p-3 mb-2 bg-light">Where can you buy me?</h1>   
+
+        <section>
+            <!-- Button trigger modal -->
+            <section>
+                <div class="container pt-3">
+                    <div class="row p-5">
+                      <div class="card col-sm mx-5 p-2">
+                        <img class="card-img-top" src="https://food-mag.co.uk/wp-content/uploads/2020/07/graig.jpg" alt="our expert bakers"> 
+                        <div class="card-body">
+                          <h5 class="card-title">From us</h5>
+                          <p class="card-text">Order from us directly.</p>
+                          <div class="btn-group" role="group" aria-label="Basic example"> 
+                            <button onclick="alert('thank you!')" type="button" class="btn btn-success">
+                                Buy now!
+                            </button> 
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Place order
+                            </button>                            
+                        </div>
+                        </div>
+                      </div>
+                      <div class="card col-sm mx-5 p-2">
+                        <img class="card-img-top" src="https://s17026.pcdn.co/wp-content/uploads/sites/9/2016/09/Local-shop.jpg" alt="local shop"> 
+                        <div class="card-body">
+                          <h5 class="card-title">Your local shop</h5>
+                          <p class="card-text">Order from your local shop.</p>
+                          <div class="btn-group" role="group" aria-label="Basic example"> 
+                            <button onclick="alert('thank you!')" type="button" class="btn btn-success">
+                                Buy now!
+                            </button> 
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Place order
+                            </button>                            
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </section>
+  
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Place an order</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Order details</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                          </div>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Order</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="bg-dark text-white p-3">
+        Thanks for visiting!
+    </footer>
+
 </body>
 </html>
