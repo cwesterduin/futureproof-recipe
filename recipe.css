@@ -1,3 +1,12 @@
-h2 {
-    color:blueviolet
+@media screen and (max-width: 576px) {
+    .container {
+        background-color:rgb(63, 30, 234, 0.4);
+        color: crimson;
+        margin: auto;
+        border: 2px solid crimson;
+    }
+
+    li {
+        color: #3f000f;
+    }
 }
